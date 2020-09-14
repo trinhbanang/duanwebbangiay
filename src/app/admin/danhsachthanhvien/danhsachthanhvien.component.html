@@ -1,0 +1,153 @@
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb my-breadcrumb">
+		<li class="breadcrumb-item"><a routerLink="/admin">Admin</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Danh Sách Thành Viên</li>
+	</ol>
+</nav>
+<div class="accordions">
+	<div class="row">
+		<!-- accordion style 1 -->
+		<div class="col-lg-12 mb-4">
+			<div class="card card_border">
+				<div class="card-header chart-grid__header d-flex mb-3 pt-5 justify-content-between">
+					Danh Sách Thành Viên
+					<button routerLink="/admin/themthanhvien" class="btn btn-primary">Thêm Thành Viên</button>
+				</div>
+				<div class="m-portlet__body">
+					<div class="m-form m-form--fit">
+						<div class="row m--margin-bottom-20">
+					
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
+									<input type="text" name="id_item"  id="id_item" value="" class="form-control m-input" placeholder="ID">
+								</div>
+							</div>
+					
+					
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
+									<input type="text" name="acc_name" id="acc_name" value="" class="form-control m-input" placeholder="Tên Tài Khoản">
+								</div>
+							</div>
+					
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
+									<input type="text" name="author"  id="author" value="" class="form-control m-input" placeholder="Email">
+								</div>
+							</div>
+
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
+									<input type="text" name="author"  id="author" value="" class="form-control m-input" placeholder="Số Điện Thoại">
+								</div>
+							</div>
+					
+					
+					
+					
+					
+					
+						</div>
+						<div class="row m--margin-bottom-20">
+					
+					
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<div class="input-group date">
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="la la-calendar-check-o glyphicon-th"></i></span>
+									</div>
+									
+									
+									
+									
+									
+					
+									<select id="status" class="form-control m-input m-input--air" name="status">
+										<option value="" selected="selected">-- Tất cả trạng thái --</option>
+										<option value="1">Hoạt Động</option>
+										<option value="0">Ngừng Hoạt Động</option>
+									</select>
+								</div>
+							</div>
+					
+					
+							<div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+								<form>
+									<div class="form-group">
+									  <div class="input-group">
+										<button class="input-group-text" (click)="dp.toggle()" type="button"></button>
+										<input id="dateOfBirth" class="form-control" placeholder="Ngày Tạo" name="dp" ngbDatepicker #dp="ngbDatepicker">
+										<div class="input-group-append">
+										</div>
+									  </div>
+									</div>
+								  </form>
+							</div>
+				
+				
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<table class="table table-hover table-dark">
+
+								<thead>
+									<tr>
+										<th scope="col">ID</th>
+										<th scope="col">Tên Tài Khoản</th>
+										<th scope="col">Email</th>
+										<th scope="col">Số Điện Thoại</th>
+										<th scope="col">Ngày Tạo</th>
+										<th scope="col">Trạng Thái</th>
+										<th scope="col">thao Tác</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="col">1</th>
+										<th scope="col">nang123</th>
+										<th scope="col">banangkt2000@gmail.com</th>
+										<th scope="col">0378679210</th>
+										<th scope="col">10/09/2020</th>
+										<th scope="col">Hoạt Động</th>
+										<th width="150" class="text-right">
+											<button class="btn btn-primary" routerLink="/admin/suathanhvien">Sửa</button>
+											<button  class="btn btn-danger ml-2">Xóa</button>
+										</th>
+									</tr>
+									<!-- <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+										<th scope="row">{{product.id}}</th>
+										<td><a routerLink="/shop/detail/{{product.id}}">{{product.name}}</a></td>
+										<td>{{product.price}}</td>
+										<td width="200" class="text-right">
+											<button class="btn btn-primary"
+												routerLink="/admin/edit/{{product.id}}">Edit</button>
+											<button (click)="removeItem(product.id)" class="btn btn-danger ml-2">Remove</button>
+										</td>
+									</tr> -->
+
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //accordion style 1 -->
+	</div>
+</div>
+<!-- <div class="paging">
+	<ngb-pagination style="margin-left: 300px;"
+[(page)]="page"
+[pageSize]="pageSize"
+[collectionSize]="products.length">
+</ngb-pagination>
+</div> -->
+

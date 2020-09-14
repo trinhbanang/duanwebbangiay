@@ -1,0 +1,130 @@
+			<!-- SITE CONTENT
+=========================================================================== -->
+<div id="site-content">
+    <div id="main">
+        
+        <section class="breadcrumbs">
+<div class="container">
+<ul class="breadcrumbss">					
+<li class="home">
+    <a  href="/" ><span >Trang chủ</span></a>						
+    <span class="xo">/</span>
+</li>
+
+<li><strong ><span>Đăng ký tài khoản</span></strong></li>
+
+</ul>
+</div>
+</section>
+        
+        <div id="content">
+
+<div class="container page_login_register">
+<h1 class="title-head"><span>Đăng ký tài khoản</span></h1>
+<div class="row">
+<div class="col-lg-12 ">
+    <div class="page-login">
+        <div id="login">
+            <span>Nếu chưa có tài khoản vui lòng đăng ký tại đây</span>
+
+            <form accept-charset="utf-8" action="/account/register" id="customer_register" method="post">
+<input name="FormType" type="hidden" value="customer_register" />
+<input name="utf8" type="hidden" value="true" /><input type="hidden" id="Token-f41c6f62c22841ba97f0e43dee7c0911" name="Token" /><script src="https://www.google.com/recaptcha/api.js?render=6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK"></script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute("6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK", {action: "/account/register"})
+.then(function(token) {
+document.getElementById("Token-f41c6f62c22841ba97f0e43dee7c0911").value = token
+});
+});
+</script>
+            <div class="form-signup" >
+                
+                <p class="errorFillres" style="margin-bottom:10px; color: red;"></p>
+            </div>
+            <div class="form-signup clearfix">
+                <div class="row">
+                    <div class="col-md-6">
+                        <fieldset class="form-group">
+                            <label>Họ: </label>
+                            <input type="text" class="form-control form-control-lg" value="" name="lastName" id="lastName"  placeholder="" required >
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset class="form-group">
+                            <label>Tên: </label>
+                            <input type="text" class="form-control form-control-lg" value="" name="firstName" id="firstName"  placeholder="" required >
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <fieldset class="form-group">
+                            <label>Email: </label>
+                            <input type="email" class="form-control form-control-lg" value="" name="email" id="email"  placeholder="" required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+
+                        <fieldset class="form-group">
+                            <label>Mật khẩu: </label>
+                            <input type="password" class="form-control form-control-lg" value="" name="password" id="password" placeholder="" required >
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                
+                    <div class="col-md-6">
+
+                        <fieldset class="form-group">
+                            <label>Số điện thoại: </label>
+                            <input type="text" class="form-control form-control-lg" pattern="\d+" value="" name="phone" id="phone" placeholder="" required >
+                        </fieldset>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 text-xs-left" style="margin-top:30px; padding: 0">
+                    <button type="summit" value="Đăng ký" class="btn-bg btn btn-lg btn-style btn-dark">Đăng ký</button>
+                    <div class="block social-login--facebooks">
+<p class="a-center">
+Hoặc đăng nhập bằng
+</p>
+<script>function loginFacebook(){var a={client_id:"947410958642584",redirect_uri:"https://store.mysapo.net/account/facebook_account_callback",state:JSON.stringify({redirect_url:window.location.href}),scope:"email",response_type:"code"},b="https://www.facebook.com/v3.2/dialog/oauth"+encodeURIParams(a,!0);window.location.href=b}function loginGoogle(){var a={client_id:"885968593373-197u9i4pte44vmvcc0j50pvhlfvl27ds.apps.googleusercontent.com",redirect_uri:"https://store.mysapo.net/account/google_account_callback",scope:"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",access_type:"online",state:JSON.stringify({redirect_url:window.location.href}),response_type:"code"},b="https://accounts.google.com/o/oauth2/v2/auth"+encodeURIParams(a,!0);window.location.href=b}function encodeURIParams(a,b){var c=[];for(var d in a)if(a.hasOwnProperty(d)){var e=a[d];null!=e&&c.push(encodeURIComponent(d)+"="+encodeURIComponent(e))}return 0==c.length?"":(b?"?":"")+c.join("&")}</script>
+<a href="javascript:void(0)" class="social-login--facebook" onclick="loginFacebook()"><img width="129px" height="37px" alt="facebook-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"></a>
+<a href="javascript:void(0)" class="social-login--google" onclick="loginGoogle()"><img width="129px" height="37px" alt="google-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"></a>
+</div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script>
+$(window).load(function(){
+setTimeout(function(){ $('.form-error').fadeOut() }, 2000);
+setTimeout(function(){ $('#errorFillres').fadeOut() }, 5000);
+});
+function hasHtml5Validation () {
+return typeof document.createElement('input').checkValidity === 'function';
+}
+if (hasHtml5Validation()) {
+$('#customer_register').submit(function (e) {
+    if (!this.checkValidity()) {
+        e.preventDefault();
+        $(this).addClass('invalid');
+        $('#errorFillres').html('Kiểm tra thông tin đăng ký');
+    } else {
+        $(this).removeClass('invalid');
+        $('#errorFillres').html('Đang tạo tài khoản');
+    }
+});
+}
+
+</script>
+</div>
+    </div>
+</div>
+<!-- /SITE CONTENT -->

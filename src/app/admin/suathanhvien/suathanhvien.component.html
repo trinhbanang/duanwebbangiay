@@ -1,0 +1,36 @@
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb my-breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/admin">Admin</a></li>
+    <li class="breadcrumb-item"><a routerLink="/admin/danhsachthanhvien">Danh Sách Thành Viên</a></li>
+		<li class="breadcrumb-item active" aria-current="page">sửa Thành Viên</li>
+	</ol>
+</nav>
+<div ngbDropdown>
+  <button class="btn btn-outline-primary" id="dropdownConfig" ngbDropdownToggle>Trạng Thái</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+    <button ngbDropdownItem>Hoạt Động</button>
+    <button ngbDropdownItem>Ngừng Hoạt Động</button>
+  </div>
+</div>
+<br>
+<form #addForm="">
+    <div class="form-group">
+      <label for="">Tên Tài Khoản</label>
+      <input type="text" class="form-control" name="name"  #addname="" placeholder="Nhập Tài Khoản">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Mật Khẩu</label>
+        <input type="text" class="form-control" name="price" id="exampleInputPassword1"  #addPrice="" placeholder="Nhập Mật Khẩu">
+      </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Email</label>
+      <input type="text" class="form-control" name="price" id="exampleInputPassword1"  #addPrice="" placeholder="Nhập Gmail">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Số Điện Thoại</label>
+        <input type="text" class="form-control" name="price" id="exampleInputPassword1"  #addPrice="" placeholder="Nhập Số Điện Thoại">
+      </div>
+
+    <button type="button" class="btn btn-primary"   >Sửa</button>
+  </form>

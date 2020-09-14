@@ -1,0 +1,68 @@
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb my-breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/admin">Admin</a></li>
+    <li class="breadcrumb-item"><a routerLink="/admin/danhsachsanpham">Danh Sách Sản Phẩm</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Sửa Sản Phẩm</li>
+	</ol>
+</nav>
+<label for="">Danh Mục Sản Phẩm</label>
+<div ngbDropdown>
+  <button class="btn btn-outline-primary" id="dropdownConfig" ngbDropdownToggle>Chọn Danh Mục Sản Phẩm</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+    <button ngbDropdownItem>Sản Phẩm Mới</button>
+    <button ngbDropdownItem>Sản Phẩm Khuyến Mại</button>
+    <button ngbDropdownItem>Sản Phẩm Nổi Bật</button>
+  </div>
+</div>
+<br>
+<form #addForm="">
+    <div class="form-group">
+      <label for="">Tên Sản Phẩm</label>
+      <input type="text" class="form-control" name="name"  #addname="" placeholder="Nhập sản phẩm">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Giá Bán</label>
+        <input type="number" class="form-control" name="price" id="exampleInputPassword1"  #addPrice="" placeholder="Nhập giá bán">
+      </div>
+
+      <div class="form-group m-form__group image-uploader ">
+        <label>Nội dung bằng hình ảnh (*.jpg,*.jpeg,*.png,*.gif):</label>
+        <input type="file" multiple="" accept="image/*" class="form-control m-input" name="content[]">
+        <div class="img-label" style=""></div>
+      </div>
+
+      <div class="form-group m-form__group image-uploader ">
+        <label>Ảnh đại diện (*.jpg,*.jpeg,*.png,*.gif):</label>
+        <input type="file" accept="image/*" class="form-control m-input" name="image[]">
+        <div class="img-label" style=""></div>
+      </div>
+      
+    <div class="form-group">
+        <label for="exampleInputPassword1">Mô tả</label>
+        <input type="text" class="form-control" name="price" id="exampleInputPassword1"  #addPrice="" placeholder="Nhập mô tả sản Phẩm">
+      </div>
+      <hr>
+      <h4><b>Chi tiết Sản Phẩm</b></h4>
+
+      <div class="form-group">
+        <label class="form-control-label">Hãng Giày:
+        </label><br/>
+            <select name="attribute_id_826" class="form-control" title="-- Không chọn --">
+              <option value="832">ADIDAS</option>
+              <option value="833">NIKE</option>
+              <option value="834">GUCCI</option>
+              <option value="834">VANS</option>
+              <option value="834">ĐANG CẬP NHẬP THÊM</option>
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label">Giới Tính:
+        </label><br/>
+            <select name="attribute_id_826" class="form-control" title="-- Không chọn --">
+              <option value="832">Giày Nam</option>
+              <option value="833">Giày Nữ</option>
+            </select>
+      </div>
+    <button type="button" class="btn btn-primary"   >Sửa</button>
+  </form>
