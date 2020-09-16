@@ -1,0 +1,107 @@
+<div class="m-content">
+
+    <div class="row">
+        <div class="col-md-12">
+            <!--begin::Portlet-->
+            <div class="m-portlet m-portlet--mobile">
+                <div class="m-portlet__head">
+                    <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                            <h3 class="m-portlet__head-text">
+                                Danh sách Đơn Hàng
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-portlet__body">
+
+                    <form action="">
+                        <div class="m-form m-form--fit">
+                            <div class="row m--margin-bottom-20">
+
+                                <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i
+                                                    class="la  la-user "></i></span></div>
+                                        <input type="text" name="username" value="" class="form-control m-input"
+                                            placeholder="Tìm Kiếm ...">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <br>
+                            <div class="row m--margin-bottom-20">
+                                <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+                                    <div class="input-group date">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i
+                                                    class="la la-calendar-check-o glyphicon-th"></i></span>
+                                        </div>
+                                        <select id="group_id" name="group_id" class="form-control">
+                                            <option value="">-- Tất cả danh mục --</option>
+                                            <option value='786'> Sản Phẩm Mới</option>
+                                            <option value='786'> Sản Phẩm Khuyến Mãi</option>
+                                            <option value='786'> Sản Phẩm Nổi Bật</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
+                                    <div class="input-group date">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i
+                                                    class="la la-calendar-check-o glyphicon-th"></i></span>
+                                        </div>
+                                        <select id="group_id" name="group_id" class="form-control">
+                                            <option value="">-- Tất cả Trạng Thái --</option>
+                                            <option value='786'> Đã hủy</option>
+                                            <option value='786'> Đang chờ</option>
+                                            <option value='786'> Đang vận chuyển</option>
+                                            <option value='786'> Từ chối</option>
+                                            <option value='786'> Hoàn thành</option>
+                                            <option value='786'> Thất Bạn</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <br>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Danh mục sản phẩm</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá bán</th>
+                                <th scope="col">Thành tiền</th>
+                                <th scope="col">Ngày tạo</th>
+                                <th scope="col">Trạng Thái</th>
+                                <th scope="col">Người mua</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col">1</th>
+                                <th scope="col">sản phẩm 1</th>
+                                <th scope="col">Sản phẩm bán chạy</th>
+                                <th scope="col">1</th>
+                                <th scope="col">500,000</th>
+                                <th scope="col">500,000</th>
+                                <th scope="col">16/9/2020</th>
+                                <th scope="col">Đang chờ</th>
+                                <th scope="col">nang123</th>
+                                <th scope="col">0378679210</th>
+                                <th scope="col"title="Xem"><button class="fas fa-eye" routerLink="/admin/chitiet"></button></th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>

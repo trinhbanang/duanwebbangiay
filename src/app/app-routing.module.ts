@@ -24,6 +24,13 @@ import { ThemsanphamComponent } from './admin/themsanpham/themsanpham.component'
 import { SuasanphamComponent } from './admin/suasanpham/suasanpham.component';
 import { DanhsachsanphamComponent } from './admin/danhsachsanpham/danhsachsanpham.component';
 import { LichsubanComponent } from './admin/lichsuban/lichsuban.component';
+import { LoginComponent } from './admin/login/login.component';
+import { ThongkeComponent } from './admin/thongke/thongke.component';
+import { DanhsachdonhangComponent } from './admin/danhsachdonhang/danhsachdonhang.component';
+import { ChitetdonhangComponent } from './admin/chitetdonhang/chitetdonhang.component';
+import { DanhsachadminComponent } from './admin/danhsachadmin/danhsachadmin.component';
+import { ThemadminComponent } from './admin/themadmin/themadmin.component';
+import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
 
 
 
@@ -50,6 +57,7 @@ const routes: Routes = [
 },
   { path: 'thanhtoan', component: ThanhtoanComponent },
   { path: 'hoadon', component: HoadonComponent },
+  { path: 'login', component: LoginComponent },
 {
   path: 'admin', component: AdminComponent,
   children: [
@@ -61,9 +69,15 @@ const routes: Routes = [
     { path: 'danhsachsanpham', component: DanhsachsanphamComponent },
     { path: 'themsanpham', component: ThemsanphamComponent },
     { path: 'suasanpham', component: SuasanphamComponent },
+    { path: 'danhsachadmin', component: DanhsachadminComponent },
+    { path: 'themadmin', component: ThemadminComponent },
+    { path: 'suaadmin', component: SuaadminComponent },
     { path: 'lichsuban', component: LichsubanComponent },
+    { path: 'thongke', component: ThongkeComponent },
+    { path: 'danhsachdonhang', component: DanhsachdonhangComponent },
+    { path: 'chitiet', component: ChitetdonhangComponent },
   ]
-}
+},
 
 ];
 

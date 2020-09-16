@@ -1,0 +1,476 @@
+<style>
+    .th-index {
+        width: 60px;
+    }
+
+    .th-name {
+        width: 300px;
+    }
+
+    .edu-history-sec {
+        float: left;
+        width: 100%;
+    }
+
+    .edu-history {
+        float: left;
+        width: 100%;
+        display: table;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .edu-history>i {
+        display: table-cell;
+        vertical-align: top;
+        width: 70px;
+        font-size: 50px;
+        color: #fb236a;
+        line-height: 60px;
+    }
+
+    .edu-hisinfo {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .edu-hisinfo>h3 {
+        float: left;
+        width: 100%;
+        font-family: Open Sans;
+        font-size: 16px;
+        color: #8b91dd;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 10px;
+    }
+
+    .edu-hisinfo>i {
+        float: left;
+        width: 100%;
+        font-style: normal;
+        font-size: 14px;
+        color: #888888;
+        margin-top: 7px;
+    }
+
+    .edu-hisinfo>span {
+        float: left;
+        width: 100%;
+        font-family: Open Sans;
+        font-size: 16px;
+        color: #202020;
+        margin-top: 8px;
+    }
+
+    .edu-hisinfo>span i {
+        font-size: 14px;
+        color: #888888;
+        font-style: normal;
+        margin-left: 12px;
+    }
+
+    .edu-hisinfo>p {
+        float: left;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+        color: #888888;
+        font-style: normal;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .edu-history.style2 {
+        margin: 0;
+        padding-bottom: 20px;
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 24px;
+        padding-bottom: 0;
+    }
+
+    .edu-history.style2>i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #8b91dd;
+        content: "";
+
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+
+    }
+
+    .edu-history.style2 .edu-hisinfo>h3 {
+        margin: 0;
+    }
+
+    .edu-history.style2::before {
+        position: absolute;
+        left: 7px;
+        top: 20px;
+        width: 2px;
+        height: 100%;
+        content: "";
+        background: #e8ecec;
+    }
+
+    .edu-history.style2:last-child::before {
+        display: none;
+    }
+
+    .edu-history.style2 .edu-hisinfo>h3 span {
+        /*        color: #202020;*/
+        margin-left: 10px;
+    }
+
+    .highligh-row {
+        background-color: #ebedf2;
+        font-weight: bold;
+    }
+</style>
+<div class="m-portlet__body">
+    <div class="tab-content">
+        <div class="tab-pane active" id="t_info">
+            <div class="m-section">
+
+                <div class="m-separator m-separator--dashed"></div>
+                <h3>Khách Hàng Yêu Cầu</h3>
+                <a href="/admin/user/edit/15.html" class="m-section__sub">nang123</a>
+
+
+                <div class="m-separator m-separator--dashed"></div>
+                <span class="m-section__sub">
+                <br>
+                    <h3>Chi tiết sản phẩm</h3>
+                </span>
+                <table class="table">
+                    <thead class="thead-default">
+                        <tr>
+                            <th class="th-index">ID</th>
+                            <th class="th-name">Tên sản phẩm</th>
+                            <th class="th-value">Số lượng</th>
+                            <th class="th-value">Giá bán</th>
+                            <th class="th-value">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>sản phẩm 1</td>
+                            <td>2</td>
+                            <td>500,000</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr class="highligh-row">
+                            <td>
+                                #
+                            </td>
+                            <td>
+                                Tổng tiền
+                            </td>
+                            <td>
+                                1,000,000 VNĐ
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <div class="m-separator m-separator--dashed"></div>
+
+                <span class="m-section__sub">
+                    <h3>Thông tin Khách Hàng</h3>
+                </span>
+                <table class="table">
+                    <thead class="thead-default">
+                        <tr>
+                            <th class="th-index">
+                                #
+                            </th>
+                            <th class="th-name">
+                                Tên thông tin
+                            </th>
+                            <th class="th-value">
+                                Nội dung
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td> 1 </td>
+                            <td> Người mua</td>
+                            <td> nang123</td>
+                        </tr>
+
+                        <tr>
+                            <td> 2 </td>
+                            <td> Email</td>
+                            <td> Banangkt2000@gmail.com </td>
+                        </tr>
+
+                        <tr>
+                            <td> 3 </td>
+                            <td> Họ và tên</td>
+                            <td> Trịnh Bá Năng</td>
+                        </tr>
+
+                        <tr>
+                            <td> 4 </td>
+                            <td> Số điện thoại </td>
+                            <td> 0378679210</td>
+                        </tr>
+
+                        <tr>
+                            <td> 5 </td>
+                            <td> Địa chỉ </td>
+                            <td>Xóm tròn, tốt động, chương mỹ, hà nội </td>
+                        </tr>
+
+                        <tr>
+                            <td> 6 </td>
+                            <td> Ghi chú </td>
+                            <td> chuyển hàng vào chủ nhật giúp em </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="m-separator m-separator--dashed"></div>
+                <span class="m-section__sub">
+                    <h3>Tiến độ</h3>
+                </span>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Người mua</th>
+                            <th scope="col">Thời Gian</th>
+                            <th scope="col">Trạng Thái</th>
+                            <th scope="col">Nội dung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">1</th>
+                            <th scope="col">nang123</th>
+                            <th scope="col">16/09/2020 12:47:14</th>
+                            <th scope="col">Đang chờ</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="">
+                <button type="button" data-toggle="modal" href="#deleteModal" class="btn btn-danger">Từ chối</button>&nbsp;
+                <button type="button" data-toggle="modal" href="#recpetionModal" class="btn btn-success">Tiếp nhận</button>
+                </div>
+<!-- 
+                <div class="m-portlet__foot">
+                    <div class="row align-items-right">
+                        <div class="col-sm-12 m--align-right">
+
+
+
+
+
+
+
+
+                            <button type="button" data-toggle="modal" href="#deleteModal" class="btn btn-danger">Từ
+                                chối</button>
+                            <button type="button" data-toggle="modal" href="#recpetionModal"
+                                class="btn btn-success">Tiếp nhận</button>
+
+
+                            <div class="modal fade" id="deleteModal" tabindex="-1" role="basic" aria-hidden="true">
+                                <div style="text-align:initial;" class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form method="POST" action="https://nick24h.vn/admin/service-purchase-auto/3594"
+                                            accept-charset="UTF-8" class="m-form"><input name="_method" type="hidden"
+                                                value="DELETE"><input name="_token" type="hidden"
+                                                value="FB634sny8wQBhV9mO2OyHL9fhKVFX45pg2qXRiE8">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Từ chối yêu cầu dịch vụ</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row m-form__group">
+                                                    <label class="col-sm-4 col-lg-4 col-form-label">Lỗi thuộc
+                                                        về:</label>
+                                                    <div class="col-sm-8 col-lg-8">
+                                                        <div class="input-group">
+                                                            <select required=""
+                                                                class="form-control m-input m-input--air"
+                                                                name="mistake_by">
+                                                                <option value="" selected="selected">-- Không chọn --
+                                                                </option>
+                                                                <option value="1">Khách</option>
+                                                                <option value="0">QTV</option>
+                                                                <option value="2">Game</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="row m-form__group">
+                                                    <label class="col-sm-4 col-lg-4 col-form-label">Nội dung:</label>
+                                                    <div class="col-sm-8 col-lg-8">
+                                                        <div class="input-group">
+                                                            <textarea style="min-height:100px;" type="text"
+                                                                class="form-control m-input m-input--air" name="note"
+                                                                placeholder="Nội dung ít nhất 10 ký tự"></textarea>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-outline"
+                                                    data-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-primary m-btn m-btn--air">Xác
+                                                    nhận</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="recpetionModal" tabindex="-1" role="basic" aria-hidden="true">
+                                <div style="text-align:initial;" class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form method="POST"
+                                            action="https://nick24h.vn/admin/service-purchase/reception/3594"
+                                            accept-charset="UTF-8" class="m-form"><input name="_token" type="hidden"
+                                                value="FB634sny8wQBhV9mO2OyHL9fhKVFX45pg2qXRiE8">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Tiếp nhận yêu cầu dịch vụ</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Bạn muốn tiếp nhận yêu cầu dịch vụ này?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-outline"
+                                                    data-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-primary m-btn m-btn--air">Xác
+                                                    nhận</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="completedModal" tabindex="-1" role="basic" aria-hidden="true">
+                                <div style="text-align:initial;" class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form method="POST"
+                                            action="https://nick24h.vn/admin/service-purchase/completed/3594"
+                                            accept-charset="UTF-8" class="m-form"><input name="_token" type="hidden"
+                                                value="FB634sny8wQBhV9mO2OyHL9fhKVFX45pg2qXRiE8">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Hoàn tất yêu cầu dịch vụ</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Xác nhận hoàn tất yêu cầu dịch vụ này?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-outline"
+                                                    data-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-primary m-btn m-btn--air">Xác
+                                                    nhận</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane " id="t_message">
+            <div class="m-section">
+                <div class="clearfix">
+
+                    <div style="padding:20px 0;">Chưa có nội dung trao đổi</div>
+                </div>
+
+                <form enctype="multipart/form-data" action="https://nick24h.vn/admin/service-purchase/inbox/3594"
+                    method="post" class="m-form m-form--fit m-form--label-align-right">
+                    <input type="hidden" name="_token" value="FB634sny8wQBhV9mO2OyHL9fhKVFX45pg2qXRiE8">
+                    <div class="m-portlet__body">
+                        <div class="form-group m-form__group row">
+                            <label for="example-text-input" class="col-sm-3 col-form-label">
+                                Nội dung
+                            </label>
+                            <div class="col-sm-7">
+                                <div class="input-group">
+                                    <textarea style="min-height:100px;" type="text"
+                                        class="form-control m-input m-input--air" name="message"
+                                        placeholder="Nội dung trao đổi..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-sm-3 col-form-label">Ảnh đính kèm</label>
+                            <div class="col-sm-7">
+                                <label style="width:100%;">
+                                    <input multiple="" accept=".jpg,.png,.gif" type="file" name="image[]">
+                                </label>
+                                <span class="m-form__help">Ảnh upload phải là gif, jpg hoặc png</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-sm-3 col-form-label">
+                                Mã xác nhận
+                            </label>
+                            <div class="col-sm-7">
+                                <div class="input-group">
+                                    <input required="" type="text" class="form-control m-input m-input--air"
+                                        id="captcha" name="captcha" placeholder="Mã xác nhận" maxlength="3"
+                                        autocomplete="off">
+                                    <span class="input-group-addon"
+                                        style="padding: 0px;width: 70px;border: 0px solid rgba(255, 255, 255, 0.3);">
+                                        <img src="https://nick24h.vn/captcha/flat?d6D6WKZ3" height="30px"
+                                            id="imgcaptcha"
+                                            onclick="document.getElementById('imgcaptcha').src ='https://nick24h.vn/captcha/flat?ZKCjkt8b'+Math.random();document.getElementById('captcha').focus();">
+                                    </span>
+                                </div>
+                                <span class="m-form__help">Có thể Click hoặc bấm vào hình để đổi mã số khác</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group m-form__group">
+                        <div class="m-form__actions m-form__actions text-right">
+                            <button type="submit" class="btn btn-primary m-btn m-btn--air">
+                                Gửi
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div> -->
+    </div>
+
+</div>

@@ -29,6 +29,13 @@ import { DanhsachsanphamComponent } from './admin/danhsachsanpham/danhsachsanpha
 import { ThemsanphamComponent } from './admin/themsanpham/themsanpham.component';
 import { SuasanphamComponent } from './admin/suasanpham/suasanpham.component';
 import { LichsubanComponent } from './admin/lichsuban/lichsuban.component';
+import { LoginComponent } from './admin/login/login.component';
+import { ThongkeComponent } from './admin/thongke/thongke.component';
+import { DanhsachdonhangComponent } from './admin/danhsachdonhang/danhsachdonhang.component';
+import { ChitetdonhangComponent } from './admin/chitetdonhang/chitetdonhang.component';
+import { DanhsachadminComponent } from './admin/danhsachadmin/danhsachadmin.component';
+import { ThemadminComponent } from './admin/themadmin/themadmin.component';
+import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +64,14 @@ import { LichsubanComponent } from './admin/lichsuban/lichsuban.component';
     DanhsachsanphamComponent,
     ThemsanphamComponent,
     SuasanphamComponent,
-    LichsubanComponent
+    LichsubanComponent,
+    LoginComponent,
+    ThongkeComponent,
+    DanhsachdonhangComponent,
+    ChitetdonhangComponent,
+    DanhsachadminComponent,
+    ThemadminComponent,
+    SuaadminComponent
   ],
   imports: [
     BrowserModule,

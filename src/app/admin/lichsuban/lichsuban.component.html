@@ -20,45 +20,30 @@
                         <div class="m-form m-form--fit">
                             <div class="row m--margin-bottom-20">
 
-                                                                        <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
-                                            <input type="text" name="username" value="" class="form-control m-input" placeholder="QTV">
-                                        </div>
-                                    </div>
-                                
                                 <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                     <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
-                                        <input type="text" name="id" value="" class="form-control m-input" placeholder="ID">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i
+                                                    class="la  la-user "></i></span></div>
+                                        <input type="text" name="username" value="" class="form-control m-input"
+                                            placeholder="Tìm Kiếm ...">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
-                                        <input type="text" name="acc_name" value="" class="form-control m-input" placeholder="Tên tài khoản">
-                                    </div>
-                                </div>
-
-                                                                        <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"><i class="la  la-user "></i></span></div>
-                                            <input type="text" name="buyer" value="" class="form-control m-input" placeholder="Người mua">
-                                        </div>
-                                    </div>
-                                
 
                             </div>
                             <div class="row m--margin-bottom-20">
                                 <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                     <div class="input-group date">
                                         <div class="input-group-append">
-                                            <span class="input-group-text"><i class="la la-calendar-check-o glyphicon-th"></i></span>
+                                            <span class="input-group-text"><i
+                                                    class="la la-calendar-check-o glyphicon-th"></i></span>
                                         </div>
                                         <select id="group_id" name="group_id" class="form-control">
                                             <option value="">-- Tất cả danh mục --</option>
-                                            <option value='786'> Ngọc Rồng Online</option><option value='785'> Kho Đồ Ngọc Rồng</option><option value='853'> Li&ecirc;n Qu&acirc;n Mobile</option><option value='854'> Sơ Sinh C&oacute; Đệ Tử</option><option value='902'> Thử vận may ngọc rồng gi&aacute; 20k</option><option value='896'> Thử vận may ngọc rồng gi&aacute; 50k</option><option value='897'> Thử vận may ngọc rồng gi&aacute; 100k</option><option value='903'> Thử Vận May Li&ecirc;n Qu&acirc;n Mobile 20k</option><option value='898'> Thử vận may ninja 100k</option><option value='912'> Ninja School Online ss</option><option value='780'> Thử vận may cấp 4</option><option value='779'> Thử vậy may cấp 3</option><option value='778'> Thử vận may cấp 2</option><option value='777'> Thử vận may cấp 1</option><option value='772'> Pubg Mobile</option><option value='773'> Thử vận may Pubg Mobile</option>
+                                            <option value='786'> Sản Phẩm Mới</option>
+                                            <option value='786'> Sản Phẩm Khuyến Mãi</option>
+                                            <option value='786'> Sản Phẩm Nổi Bật</option>
+
                                         </select>
                                     </div>
                                 </div>
@@ -66,34 +51,94 @@
                                 <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text">Từ</span></div>
-                                        <input type="text" class="form-control m-input datetimepicker" id="started_at" name="started_at" value="" placeholder="Thời gian bắt đầu" autocomplete="off">
+                                        <input type="text" class="form-control m-input datetimepicker" id="started_at"
+                                            name="started_at" value="" placeholder="Thời gian bắt đầu"
+                                            autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text">Đến</span></div>
-                                        <input type="text" class="form-control m-input datetimepicker" id="ended_at" name="ended_at" value="" placeholder="Thời gian kết thúc" autocomplete="off">
+                                        <input type="text" class="form-control m-input datetimepicker" id="ended_at"
+                                            name="ended_at" value="" placeholder="Thời gian kết thúc"
+                                            autocomplete="off">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-3 m--margin-bottom-10-tablet-and-mobile">
                                     <button type="submit" class="btn btn-brand m-btn m-btn--icon" id="m_search">
-                                    <span>
-                                        <i class="btn btn-primary">
-                                        <span>Tìm kiếm</span>
-                                    </i>
-                                    </span>
+                                        <span>
+                                            <i class="btn btn-primary">
+                                                <span>Tìm kiếm</span>
+                                            </i>
+                                        </span>
                                     </button>
                                     <a href="/admin/lichsuban" class="btn btn-danger m-btn m-btn--icon" id="m_search">
-                                    <span>
-                                        <i class="la la-refresh"></i>
-                                        <span>Tất cả</span>
-                                    </span>
+                                        <span>
+                                            <i class="la la-refresh"></i>
+                                            <span>Tất cả</span>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
 
                         </div>
                     </form>
-                    
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Thời gian</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Danh mục sản phẩm</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá bán</th>
+                                <th scope="col">Thành tiền</th>
+                                <th scope="col">Người mua</th>
+                                <th scope="col">Số điện thoại</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="" style="background-color: #abe7ed;">
+                                <th colspan="4">Tổng các Trang</th>
+                                <td colspan="1">10 giày</td>
+                                <td colspan="1"></td>
+                                <td>15,000,000</td>
+                                <td colspan="1"></td>
+                                <td colspan="1"></td>
+                            </tr>
+                            <tr class="">
+                                <th colspan="4">Ngày 9/16/2020</th>
+                                <td colspan="1">10 giày</td>
+                                <td colspan="1"></td>
+                                <td>15,000,000</td>
+                                <td colspan="1"></td>
+                                <td colspan="1"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11:31:07</th>
+                                <td>1</td>
+                                <td>sản phẩm 01</td>
+                                <td>sản phẩm mới</td>
+                                <td>5</td>
+                                <td>1,500,000</td>
+                                <td>7,500,000</td>
+                                <td>banang123</td>
+                                <td>0378679210</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8:31:07</th>
+                                <td>5</td>
+                                <td>sản phẩm 05</td>
+                                <td>sản phẩm mới</td>
+                                <td>5</td>
+                                <td>1,500,000</td>
+                                <td>7,500,000</td>
+                                <td>dung123</td>
+                                <td>034563145</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
                 </div>

@@ -1,7 +1,7 @@
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb my-breadcrumb">
 		<li class="breadcrumb-item"><a routerLink="/admin">Admin</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Danh Sách Thành Viên</li>
+		<li class="breadcrumb-item active" aria-current="page">Danh Sách Admin</li>
 	</ol>
 </nav>
 <div class="accordions">
@@ -10,8 +10,8 @@
 		<div class="col-lg-12 mb-4">
 			<div class="card card_border">
 				<div class="card-header chart-grid__header d-flex mb-3 pt-5 justify-content-between">
-					Danh Sách Thành Viên
-					<button routerLink="/admin/themthanhvien" class="btn btn-primary">Thêm Thành Viên</button>
+					Danh Sách Admin
+					<button routerLink="/admin/themadmin" class="btn btn-primary">Thêm Admin</button>
 				</div>
 				<div class="m-portlet__body">
 					<div class="m-form m-form--fit">
@@ -61,8 +61,6 @@
 									<tr>
 										<th scope="col">ID</th>
 										<th scope="col">Tên Tài Khoản</th>
-										<th scope="col">Email</th>
-										<th scope="col">Số Điện Thoại</th>
 										<th scope="col">Ngày Tạo</th>
 										<th scope="col">Trạng Thái</th>
 										<th scope="col">thao Tác</th>
@@ -72,12 +70,10 @@
 									<tr>
 										<th scope="col">1</th>
 										<th scope="col">nang123</th>
-										<th scope="col">banangkt2000@gmail.com</th>
-										<th scope="col">0378679210</th>
 										<th scope="col">10/09/2020</th>
 										<th scope="col">Hoạt Động</th>
 										<th width="150" class="text-right">
-											<button class="btn btn-primary" routerLink="/admin/suathanhvien">Sửa</button>
+											<button class="btn btn-primary" routerLink="/admin/suaadmin">Sửa</button>
 											<button  class="btn btn-danger ml-2">Xóa</button>
 										</th>
 									</tr>
