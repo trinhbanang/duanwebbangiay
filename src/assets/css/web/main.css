@@ -22,7 +22,7 @@ body{font-family:"Roboto",sans-serif;font-size:14px;line-height:1;color:#444;bac
 nav.navbar.navbar-default{z-index:1043}
 .header-main{background:#000}
 a.logo img{max-width:100%;display:block;margin:0 auto}
-a.logo{display:flex;text-align:center;align-items:center;background:#000000;height:133px}
+a.logo{display:flex;text-align:center;align-items:center;background:#ffe51e;height:65px}
 .logo_content{background:#ffe51e;width:95%;height:133px;position:absolute;bottom:0;left:15px;z-index:1044}
 nav.navbar.navbar-default{margin-bottom:0!important;margin-top:20px;background-color:#000000;border-color:#000000}
 .navbar{min-height:45px;margin-bottom:20px}
