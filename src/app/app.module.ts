@@ -36,6 +36,7 @@ import { ChitetdonhangComponent } from './admin/chitetdonhang/chitetdonhang.comp
 import { DanhsachadminComponent } from './admin/danhsachadmin/danhsachadmin.component';
 import { ThemadminComponent } from './admin/themadmin/themadmin.component';
 import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
+import { FooterComponent } from './web/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
     ChitetdonhangComponent,
     DanhsachadminComponent,
     ThemadminComponent,
-    SuaadminComponent
+    SuaadminComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
