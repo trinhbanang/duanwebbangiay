@@ -1,0 +1,68 @@
+
+                            <section class="section-products">
+                                <div class="section-title col-xs-12">
+                                    <h2 class="section-title-heading"><a href="/san-pham-khuyen-mai"
+                                            title="Sản phẩm khuyến mại">Sản phẩm khuyến mại</a></h2>
+                                </div>
+                                <!-- End .section-title -->
+                                <div class="gridsp">
+                                    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                                        <div class="product_item">
+                                            <div class="product_item_form">
+                                                <div class="product-action-grid">
+                                                    <a href="/bo-do-boi-hoa-tiet-quat-lan-hanh"
+                                                        data-handle="bo-do-boi-hoa-tiet-quat-lan-hanh"
+                                                        class="button_wh_40 btn_view right-to quick-view">
+                                                        <i class="icon-magnifier-add icons fa fa-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="sale_tag">- 5%</div>
+                                                <div class="product-gird">
+                                                    <div class="product-thumbnail display_flex">
+                                                        <a class="product-img" href="/bo-do-boi-hoa-tiet-quat-lan-hanh"
+                                                            title="Bộ đồ bơi họa tiết quạt Lan Hạnh">
+                                                            <img class="lazyload"
+                                                                src="{{product.img}}"
+                                                                data-src=""
+                                                                alt="Bộ đồ bơi họa tiết quạt Lan Hạnh">
+                                                        </a>
+                                                    </div>
+                                                    <h3 class="product-name text2line"><a
+                                                            href="/bo-do-boi-hoa-tiet-quat-lan-hanh"
+                                                            title="Bộ đồ bơi họa tiết quạt Lan Hạnh">{{product.name}}</a></h3>
+                                                    <span class="product-price product-item-price price-box">
+                                                        <b class=" productminprice">
+                                                            <span class="price">${{((product.price)/100)*95}}</span>
+                                                        </b>
+                                                        <del class="product-item-price-sale old_price">
+                                                            <span class="price product-price-old">${{product.price}}</span>
+                                                        </del>
+                                                    </span>
+                                                    <form action="/cart/add" method="post"
+                                                        class="variants form-nut-grid" data-id="product-actions-1171428"
+                                                        enctype="multipart/form-data">
+                                                        <div class="product-action-btn">
+                                                            <input class="hidden" type="hidden" name="variantId"
+                                                                value="1818603" />
+                                                            <button
+                                                                class="btn btn-lg btn-hai-40 product-action addtocart"
+                                                                title="Tuỳ chọn sản phẩm" type="button"
+                                                                onclick="window.location.href='/bo-do-boi-hoa-tiet-quat-lan-hanh'">
+                                                                <span class="icon-cart-style"><i
+                                                                        class="fa fa-shopping-cart"
+                                                                        aria-hidden="true"></i></span> Tùy chọn
+                                                            </button>
+                                                        </div>
+                                                    </form>
+
+
+
+
+                                                </div>
+                                                <!-- End .product-gird -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
