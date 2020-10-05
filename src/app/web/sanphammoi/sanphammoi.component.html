@@ -20,7 +20,7 @@
                                                 </div>
                                                 <div class="product-gird">
                                                     <div class="product-thumbnail display_flex">
-                                                        <a class="product-img" href="/giay-cau-long-kawa"
+                                                        <a class="product-img" href="/web/chitietsp/{{product.id}}"
                                                             title="Giày cầu lông Kawa">
                                                             <img class="lazyload"
                                                                 src="{{product.img}}"
@@ -54,5 +54,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="paging">
+                                    <ngb-pagination style="margin-left: 300px;"
+                                    [(page)]="page"
+                                    [pageSize]="pageSize"
+                                    [collectionSize]="products.length">
+                                    </ngb-pagination>
                                 </div>
                             </section>

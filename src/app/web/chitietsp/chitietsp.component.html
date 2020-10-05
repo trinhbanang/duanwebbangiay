@@ -38,7 +38,7 @@
                                 <meta itemprop="image"
                                     content="//bizweb.dktcdn.net/thumb/grande/100/048/137/products/2-giay-cau-long-dong-luc-promax-003-do-phoi-den-712ded2d-e644-4793-bd24-d5079dbd247f.jpg?v=1473415482307">
                                 <form action="/cart/add" method="post" class="product_form_class">
-                                    <div class="product-detail-left col-md-5">
+                                    <div class="product-detail-left col-md-5" *ngIf="product">
                                         <div class="popup-gallery">
                                             <div class="row">
                                                 <div class="col-sm-12">
@@ -47,7 +47,7 @@
 
                                                         <a href="https://bizweb.dktcdn.net/100/048/137/products/2-giay-cau-long-dong-luc-promax-003-do-phoi-den-712ded2d-e644-4793-bd24-d5079dbd247f.jpg?v=1473415482307"
                                                             id="ex1" class="checkurl">
-                                                            <img src="https://bizweb.dktcdn.net/100/048/137/products/2-giay-cau-long-dong-luc-promax-003-do-phoi-den-712ded2d-e644-4793-bd24-d5079dbd247f.jpg?v=1473415482307"
+                                                            <img src="{{product.img}}"
                                                                 alt="Giày cầu lông Kawa" id="image"
                                                                 data-zoom-image="https://bizweb.dktcdn.net/100/048/137/products/2-giay-cau-long-dong-luc-promax-003-do-phoi-den-712ded2d-e644-4793-bd24-d5079dbd247f.jpg?v=1473415482307">
                                                         </a>
@@ -90,7 +90,7 @@
                                     <div class="product-detail-right col-md-7">
                                         <div class="details-pro">
                                             <h1 class="product-name" itemprop="name"><a href="/giay-cau-long-kawa"
-                                                    title="Giày cầu lông Kawa">Giày cầu lông Kawa</a></h1>
+                                                    title="Giày cầu lông Kawa">{{product.name}}</a></h1>
 
                                             <div class="detail-header-info">
 
@@ -111,15 +111,12 @@
                                             <div class="price-box" itemscope itemtype="http://schema.org/Offer">
 
                                                 <div class="special-price"><span
-                                                        class="price product-price">560.000₫</span> </div> <!-- Giá -->
-
+                                                        class="price product-price">${{product.price}}</span> </div> <!-- Giá -->
                                             </div>
-
-                                            <div class="description"> Giày cầu lông Kawa-311-ghi
-
-                                                Giày cầu lông với kiểu dáng mạnh mẽ, màu sắc lôi cuốn, thiết kế vừa vặn,
-                                                êm ái cho đôi chân của bạn. Giày có tác dụng chống trơn trượt, lật cổ
-                                                chân, có độ bền cao. Bạn sẽ cảm nhận rõ sự khác...</div>
+                                            <div>{{ product.status ? 'Còn hàng' : 'Hết hàng'}}</div>
+                                            <br/>
+                                            <div class="description"> {{product.desc}}</div>
+                                            
                                             <div class="form-product">
                                                 <form enctype="multipart/form-data" id="add-to-cart-form"
                                                     action="/cart/add" method="post" class="form-inline">
@@ -806,197 +803,6 @@
 
                             </ul>
                         </div>
-
-
-
-                        <div class="widget-sidebar-item product">
-                            <a href="/san-pham-noi-bat" title="Sản phẩm nổi bật">
-                                <h2 class="widget-sidebar-name">Sản phẩm nổi bật</h2>
-                            </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="product_item">
-                                <div class="product_item_form">
-                                    <div class="product-action-grid">
-
-                                        <a href="/giay-cau-long-kawa" data-handle="giay-cau-long-kawa"
-                                            class="button_wh_40 btn_view right-to quick-view">
-                                            <i class="icon-magnifier-add icons fa fa-eye"></i>
-                                        </a>
-
-                                    </div>
-
-
-
-
-
-                                    <div class="product-gird">
-                                        <div class="product-thumbnail display_flex">
-                                            <a class="product-img" href="/giay-cau-long-kawa"
-                                                title="Giày cầu lông Kawa">
-                                                <img class="lazyload"
-                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                    data-src="//bizweb.dktcdn.net/thumb/large/100/048/137/products/2-giay-cau-long-dong-luc-promax-003-do-phoi-den-712ded2d-e644-4793-bd24-d5079dbd247f.jpg?v=1473415482307"
-                                                    alt="Giày cầu lông Kawa">
-                                            </a>
-
-                                        </div>
-                                        <h3 class="product-name text2line"><a href="/giay-cau-long-kawa"
-                                                title="Giày cầu lông Kawa">Giày cầu lông Kawa</a></h3>
-
-                                        <span class="product-price product-item-price price-box">
-
-
-                                            <b class=" productminprice">
-                                                <span class="price">560.000₫</span>
-                                            </b>
-
-
-                                        </span>
-                                        <form action="/cart/add" method="post" class="variants form-nut-grid"
-                                            data-id="product-actions-1168929" enctype="multipart/form-data">
-                                            <div class="product-action-btn">
-
-
-                                                <input type="hidden" name="variantId" value="1815313" />
-                                                <button
-                                                    class="product-action addtocart add_to_cart btn btn-lg btn-hai-40"
-                                                    type="button" title="Thêm vào giỏ hàng">
-                                                    <span class="icon-cart-style"><i class="fa fa-shopping-cart"
-                                                            aria-hidden="true"></i></span> Mua hàng
-                                                </button>
-
-
-
-
-                                            </div>
-                                        </form>
-
-
-
-
-                                    </div>
-                                    <!-- End .product-gird -->
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="product_item">
-                                <div class="product_item_form">
-                                    <div class="product-action-grid">
-
-                                        <a href="/giay-da-bong-nguoi-lon-prowin"
-                                            data-handle="giay-da-bong-nguoi-lon-prowin"
-                                            class="button_wh_40 btn_view right-to quick-view">
-                                            <i class="icon-magnifier-add icons fa fa-eye"></i>
-                                        </a>
-
-                                    </div>
-
-
-
-
-
-                                    <div class="product-gird">
-                                        <div class="product-thumbnail display_flex">
-                                            <a class="product-img" href="/giay-da-bong-nguoi-lon-prowin"
-                                                title="Giày đá bóng người lớn Prowin">
-                                                <img class="lazyload"
-                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                    data-src="//bizweb.dktcdn.net/thumb/large/100/048/137/products/giay-da-bong-nam-codad.jpg?v=1498533389880"
-                                                    alt="Giày đá bóng người lớn Prowin">
-                                            </a>
-
-                                        </div>
-                                        <h3 class="product-name text2line"><a href="/giay-da-bong-nguoi-lon-prowin"
-                                                title="Giày đá bóng người lớn Prowin">Giày đá bóng người lớn Prowin</a>
-                                        </h3>
-
-                                        <span class="product-price product-item-price price-box">
-
-
-                                            <b class=" productminprice">
-                                                <span class="price">1.300.000₫</span>
-                                            </b>
-
-
-                                        </span>
-                                        <form action="/cart/add" method="post" class="variants form-nut-grid"
-                                            data-id="product-actions-1168870" enctype="multipart/form-data">
-                                            <div class="product-action-btn">
-
-
-                                                <input type="hidden" name="variantId" value="1815251" />
-                                                <button
-                                                    class="product-action addtocart add_to_cart btn btn-lg btn-hai-40"
-                                                    type="button" title="Thêm vào giỏ hàng">
-                                                    <span class="icon-cart-style"><i class="fa fa-shopping-cart"
-                                                            aria-hidden="true"></i></span> Mua hàng
-                                                </button>
-
-
-
-
-                                            </div>
-                                        </form>
-
-
-
-
-                                    </div>
-                                    <!-- End .product-gird -->
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
 
                         <div id="bw-statistics"></div>
                     </div>

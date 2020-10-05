@@ -19,7 +19,7 @@
                                                 <div class="sale_tag">- 5%</div>
                                                 <div class="product-gird">
                                                     <div class="product-thumbnail display_flex">
-                                                        <a class="product-img" href="/bo-do-boi-hoa-tiet-quat-lan-hanh"
+                                                        <a class="product-img" href="/web/chitietsp/{{product.id}}"
                                                             title="Bộ đồ bơi họa tiết quạt Lan Hạnh">
                                                             <img class="lazyload"
                                                                 src="{{product.img}}"
@@ -64,5 +64,12 @@
                                         </div>
                                     </div>
 
+                                </div>
+                                <div class="paging">
+                                    <ngb-pagination style="margin-left: 300px;"
+                                    [(page)]="page"
+                                    [pageSize]="pageSize"
+                                    [collectionSize]="products.length">
+                                    </ngb-pagination>
                                 </div>
                             </section>
