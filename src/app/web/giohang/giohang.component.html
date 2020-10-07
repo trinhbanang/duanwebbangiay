@@ -16,7 +16,7 @@
                 </ul>
             </div>
         </section>
-        <section class="mtb25 section-page" *ngIf="CartItems.length == 0">
+        <section class="mtb25 section-page" *ngIf="cartItems.length == 0">
             <div class="container">
                 <h1>Giỏ hàng đang trống</h1>
                 <div>
@@ -34,7 +34,7 @@
 
             </div>
         </section>
-        <div class="container" *ngIf="CartItems.length > 0">
+        <div class="container" *ngIf="cartItems.length > 0">
             <table class="table table-bordered">
                 <thead>
                     <tr style=" background-color: #000000">
@@ -47,16 +47,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of cartItem">
+                    <!-- <tr *ngFor="let item of cartItems">
                         <th scope="row"><img
-                                src="{{ cartItem.img }}">
+                            src="{{ cartItem.img }}">
                         </th>
-                        <td>{{ cartItem.Name }}</td>
+                        <td>{{ cartItem.productName }}</td>
                         <td>{{cartItem.price}}</td>
                         <td>{{ cartItem.qty }}</td>
                         <td>{{ (cartItem.qty * cartItem.price)}}</td>
-                        <td><button>xóa</button></td>
-                    </tr>
+                        <td><button>xóa</button></td> -->
+                    <!-- </tr> -->
                     <tr>
                         <td class="a-right last" colspan="50" style="padding: 15px; text-align: end;">
                             <button style="float:left;" routerLink="/web/home" name="checkout" class="button_height_44"
@@ -68,6 +68,8 @@
                     </tr>
                 </tbody>
             </table>
+
+
             <div class="" style="text-align: center">
                 <h2> Tổng Tiền Thanh Toán : 2.600.000đ</h2>
                 

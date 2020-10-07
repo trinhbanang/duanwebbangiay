@@ -12,7 +12,8 @@ export class CartService {
   UrlApi='https://5e7b6f3b0e04630016333391.mockapi.io/cart';
   constructor(private http: HttpClient) { }
 
-  getCartItems(): Observable<CartItem[]>{
+  getCartItems(): Observable<CartItem[]> {
+    //TODO: Mapping the obtained result to our CartItem props. (pipe() and map())
     return this.http.get<CartItem[]>(this.UrlApi).pipe(
       map((result: any[]) => {
         let cartItems: CartItem[] = [];
@@ -21,7 +22,7 @@ export class CartService {
           let productExists = false
 
           for (let i in cartItems) {
-            if (cartItems[i].productId == item.product.id) {
+            if (cartItems[i].productId === item.product.id) {
               cartItems[i].qty++
               productExists = true
               break;
@@ -37,7 +38,8 @@ export class CartService {
       })
     );
   }
-  addProductToCart(product: Product): Observable<any>{
-    return this.http.post (this.UrlApi, {product});
+
+  addProductToCart(product: Product): Observable<any> {
+    return this.http.post(this.UrlApi , { product });
   }
 }

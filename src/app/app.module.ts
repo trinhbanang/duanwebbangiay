@@ -82,7 +82,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SanphammoiComponent,
     SanphamkhuyenmaiComponent,
-    SanphamnoibatComponent
+    SanphamnoibatComponent,
   ],
   imports: [
     BrowserModule,
