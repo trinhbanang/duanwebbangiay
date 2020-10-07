@@ -46,7 +46,7 @@ const routes: Routes = [
     { path: 'tintuc', component: TintucComponent },
     { path: 'lienhe', component: LienheComponent },
     { path: 'giohang', component: GiohangComponent },
-    { path: 'chitietsp', component: ChitietspComponent },
+    { path: 'chitietsp/:id', component: ChitietspComponent },
     { path: 'dangnhap', component: DangnhapComponent },
     { path: 'dangky', component: DangkyComponent },
     { path: 'taikhoan' , component: TaikhoancuatoiComponent},

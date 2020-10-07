@@ -24,7 +24,7 @@ import { DiachikhachhangComponent } from './web/diachikhachhang/diachikhachhang.
 import { ChitethoadonComponent } from './web/chitethoadon/chitethoadon.component';
 import { ThemthanhvienComponent } from './admin/themthanhvien/themthanhvien.component';
 import { SuathanhvienComponent } from './admin/suathanhvien/suathanhvien.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { DanhsachsanphamComponent } from './admin/danhsachsanpham/danhsachsanpham.component';
 import { ThemsanphamComponent } from './admin/themsanpham/themsanpham.component';
 import { SuasanphamComponent } from './admin/suasanpham/suasanpham.component';
@@ -36,6 +36,13 @@ import { ChitetdonhangComponent } from './admin/chitetdonhang/chitetdonhang.comp
 import { DanhsachadminComponent } from './admin/danhsachadmin/danhsachadmin.component';
 import { ThemadminComponent } from './admin/themadmin/themadmin.component';
 import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
+import { FooterComponent } from './web/footer/footer.component';
+import { SanphammoiComponent } from './web/sanphammoi/sanphammoi.component';
+import { SanphamkhuyenmaiComponent } from './web/sanphamkhuyenmai/sanphamkhuyenmai.component';
+import { SanphamnoibatComponent } from './web/sanphamnoibat/sanphamnoibat.component';
+import { ProductService } from './services/product.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -71,14 +78,19 @@ import { SuaadminComponent } from './admin/suaadmin/suaadmin.component';
     ChitetdonhangComponent,
     DanhsachadminComponent,
     ThemadminComponent,
-    SuaadminComponent
+    SuaadminComponent,
+    FooterComponent,
+    SanphammoiComponent,
+    SanphamkhuyenmaiComponent,
+    SanphamnoibatComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    HttpClientModule,
+    NgbModule, NgbPaginationModule, NgbAlertModule, FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
